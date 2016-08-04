@@ -1,4 +1,119 @@
 html, body {
-  background-color: black;
-  color: white;
+  font-family: Arial;
+  line-height: 2;
+}
+
+#container {
+  margin: 20px auto;
+  font-size: 165%;
+
+  #calloutListing {
+
+    margin-bottom: 20px;
+
+    .box {
+      padding: 12px 12px 5em;
+      font-size: 80%;
+      position: relative;
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 120%;
+        font-weight: 900;
+        line-height: 1.5;
+      }
+      img {
+        width: 100%;
+        margin-top: 6px;
+      }
+      a {
+        color: currentColor;
+      }
+      a.callToAction {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        left: 12px;
+        padding: 5px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: white;
+        border: 3px solid #fcd962;
+        color: currentColor;
+        text-decoration: none;
+        font-weight: 900;
+      }
+
+      &.blue {
+        background-color: #2dabe0;
+        border: 8px solid #57bbe6;
+        color: white;
+        a.callToAction {
+          color: #2dabe0;
+          border-color: #57bbe6;
+        }
+      }
+      &.orange {
+        background-color: #fcd03d;
+        border: 8px solid #fcd962;
+      }
+
+    }
+  }
+
+  #sponsorsList {
+    text-transform: uppercase;
+    font-size: 80%;
+    padding: 0 15px;
+    text-align: center;
+
+    a {
+      color: black;
+    }
+
+    #logos {
+      margin-top: 20px;
+      width: 100%;
+      a {
+        display: inline-block;
+      }
+      img {
+        min-height: 2.7vw;
+        min-width: 55px;
+        margin: 20px;
+      }
+    }
+
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+    #container {
+        width: 70%;
+        min-width: 800px;
+        padding: 80px 0;
+        font-size: 110%;
+
+        #calloutListing {
+          display: flex;
+          justify-content: space-between;
+
+          .box {
+            width: 27%;
+          }
+          a.callToAction {
+            left: auto !important;
+          }
+        }
+        #sponsorsList {
+          #logos {
+            display: flex;
+            justify-content: space-between;
+            img {
+              flex: 1;
+            }
+          }
+        }
+    }
 }
