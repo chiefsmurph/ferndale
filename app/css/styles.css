@@ -45,7 +45,7 @@ html, body {
   line-height: 2; }
 
 #container {
-  margin: 20px auto;
+  margin: 10px auto;
   font-size: 165%; }
   #container #calloutListing {
     margin-bottom: 20px; }
@@ -99,8 +99,8 @@ html, body {
       #container #sponsorsList #logos a {
         display: inline-block; }
       #container #sponsorsList #logos img {
-        min-height: 2.7vw;
-        min-width: 55px;
+        min-height: 2vw;
+        min-width: 62px;
         margin: 20px; }
 
 @media only screen and (min-width: 600px) {
@@ -116,8 +116,18 @@ html, body {
         width: 27%; }
       #container #calloutListing a.callToAction {
         left: auto !important; }
-    #container #sponsorsList #logos {
-      display: flex;
-      justify-content: space-between; }
-      #container #sponsorsList #logos img {
-        flex: 1; } }
+    #container #sponsorsList {
+      padding: 0;
+      text-align: left; }
+      #container #sponsorsList #logos {
+        text-align: justify; }
+        #container #sponsorsList #logos:after {
+          width: 100%;
+          content: '';
+          display: inline-block; }
+        #container #sponsorsList #logos img {
+          display: inline-block;
+          /* IE fix. */
+          *display: inline;
+          zoom: 1;
+          margin: auto; } }

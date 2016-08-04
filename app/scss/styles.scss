@@ -4,7 +4,7 @@ html, body {
 }
 
 #container {
-  margin: 20px auto;
+  margin: 10px auto;
   font-size: 165%;
 
   #calloutListing {
@@ -78,8 +78,8 @@ html, body {
         display: inline-block;
       }
       img {
-        min-height: 2.7vw;
-        min-width: 55px;
+        min-height: 2vw;
+        min-width: 62px;
         margin: 20px;
       }
     }
@@ -107,11 +107,21 @@ html, body {
           }
         }
         #sponsorsList {
+          padding: 0;
+          text-align: left;
           #logos {
-            display: flex;
-            justify-content: space-between;
+            text-align: justify;
+            &:after {
+              width: 100%;
+              content: '';
+              display: inline-block;
+            }
             img {
-              flex: 1;
+              display: inline-block;
+              /* IE fix. */
+            	*display: inline;
+            	zoom: 1;
+              margin: auto;
             }
           }
         }
