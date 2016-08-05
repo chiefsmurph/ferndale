@@ -119,8 +119,8 @@ html, body {
         display: inline-block;
         width: 50%; }
       #container #sponsorsList #logos img {
-        max-width: 156px;
-        max-height: 56px;
+        max-width: 34vw;
+        max-height: 13vw;
         flex: 1;
         margin: 10px 0; } }
 
