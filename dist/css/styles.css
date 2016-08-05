@@ -62,10 +62,10 @@ html, body {
         text-transform: uppercase;
         font-size: 130%;
         font-weight: 900;
-        line-height: 1.3; }
+        line-height: 1.3;
+        margin-bottom: 6px; }
       #container #calloutListing .box img {
-        width: 100%;
-        margin-top: 6px; }
+        width: 100%; }
       #container #calloutListing .box a {
         color: currentColor; }
       #container #calloutListing .box a.callToAction {
@@ -100,7 +100,7 @@ html, body {
       margin-top: 20px;
       width: 100%; }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 600px) {
   #container {
     margin: 30px auto 80px;
     font-size: 155%; }
