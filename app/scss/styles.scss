@@ -34,7 +34,7 @@ html, body {
         position: absolute;
         bottom: $calloutPadding;
         right: $calloutPadding;
-        padding: 2px 30px;
+        padding: 2px 3vw;
         text-align: center;
         text-transform: uppercase;
         background-color: white;
@@ -115,12 +115,12 @@ html, body {
 }
 
 @media only screen and (min-width: 600px) {
-  // desktop only
+  // desktop / tablet
   #container {
-    width: 70%;
-    min-width: 800px;
+    width: 80%;
+    // min-width: 800px;
     padding: 80px 0;
-    font-size: 110%;
+    font-size: 1.4vw;
 
     #calloutListing {
       display: flex;
@@ -130,14 +130,14 @@ html, body {
         width: 32%;
       }
       a.callToAction {
-        font-size: 12px;
+        font-size: 100%;
       }
     }
     #sponsorsList {
       padding: 0;
       text-align: left;
       p {
-        font-size: 13px;
+        font-size: 80%;
       }
       #logos {
         text-align: justify;

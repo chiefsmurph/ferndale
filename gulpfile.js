@@ -35,6 +35,7 @@ gulp.task('sass', function() {
     .pipe(sass()) // Passes it through a gulp-sass
     .pipe(concat('styles.css'))  // Concat all SCSS
     .pipe(gulp.dest('app/css')) // Outputs it in the css folder
+    .pipe(gulp.dest('dist/css')) // Outputs it in the css folder
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));

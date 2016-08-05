@@ -72,7 +72,7 @@ html, body {
         position: absolute;
         bottom: 18px;
         right: 18px;
-        padding: 2px 30px;
+        padding: 2px 3vw;
         text-align: center;
         text-transform: uppercase;
         background-color: white;
@@ -126,22 +126,21 @@ html, body {
 
 @media only screen and (min-width: 600px) {
   #container {
-    width: 70%;
-    min-width: 800px;
+    width: 80%;
     padding: 80px 0;
-    font-size: 110%; }
+    font-size: 1.4vw; }
     #container #calloutListing {
       display: flex;
       justify-content: space-between; }
       #container #calloutListing .box {
         width: 32%; }
       #container #calloutListing a.callToAction {
-        font-size: 12px; }
+        font-size: 100%; }
     #container #sponsorsList {
       padding: 0;
       text-align: left; }
       #container #sponsorsList p {
-        font-size: 13px; }
+        font-size: 80%; }
       #container #sponsorsList #logos {
         text-align: justify; }
         #container #sponsorsList #logos:after {
