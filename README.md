@@ -7,4 +7,5 @@ open /dist/index.html
 or
 
 npm install
+
 gulp
