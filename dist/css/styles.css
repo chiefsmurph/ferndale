@@ -55,31 +55,32 @@ html, body {
   #container #calloutListing {
     margin-bottom: 20px; }
     #container #calloutListing .box {
-      padding: 18px 18px 80px;
+      padding: 2vh 2vh 80px;
       font-size: 80%;
       position: relative; }
       #container #calloutListing .box h2 {
         text-transform: uppercase;
         font-size: 130%;
         font-weight: 900;
-        line-height: 1.3;
-        margin-bottom: 6px; }
+        line-height: 1.3; }
       #container #calloutListing .box img {
-        width: 100%; }
+        width: 100%;
+        margin-top: 6px; }
       #container #calloutListing .box a {
         color: currentColor; }
       #container #calloutListing .box a.callToAction {
         position: absolute;
-        bottom: 18px;
-        right: 18px;
-        padding: 2px 3vw;
+        bottom: 2vh;
+        right: 2vh;
+        padding: 2px 8vw;
         text-align: center;
         text-transform: uppercase;
         background-color: white;
         border: 3px solid #fcd962;
         color: currentColor;
         text-decoration: none;
-        font-weight: 900; }
+        font-weight: 900;
+        white-space: nowrap; }
       #container #calloutListing .box.blue {
         background-color: #2dabe0;
         border: 8px solid #57bbe6;
@@ -135,7 +136,8 @@ html, body {
       #container #calloutListing .box {
         width: 32%; }
       #container #calloutListing a.callToAction {
-        font-size: 100%; }
+        padding: 2px 30px !important;
+        max-width: 85%; }
     #container #sponsorsList {
       padding: 0;
       text-align: left; }
